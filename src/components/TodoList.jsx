@@ -11,10 +11,14 @@ const TodoList=()=>{
       updateItem(event.target.value);
     }
     const AddItem2=()=>{
+        if(item=="")
+        alert("Please Enter Task");
+    else{
         updateItem("")
         addItems((preVal)=>{
            return [...preVal,item]
         });
+    }
     }
 
     const reSet=()=>{
